@@ -1,4 +1,4 @@
-body {
+body{
     background-color: #0c1014;
     color: white;
     width: 90%;
@@ -7,14 +7,14 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.main-title {
-    font-size: 62px;
+.titulo-principal{
+    font-size: 55px;
     text-transform: uppercase;
     text-align: center;
-    margin: 46px 0;
+    margin: 40px 0;
 }
 
-.header {
+.header{
     display: flex;
     background-color: #05080a;
     padding: 16px;
@@ -22,45 +22,47 @@ body {
     align-items: center;
 }
 
-.header__logo {
+.header__logo{
     font-size: 36px;
     text-transform: uppercase;
     margin-left: 16px;
     letter-spacing: 2px;
 }
 
-.header__nav ul {
+.menu-opcoes{
     display: flex;
     list-style-type: none;
     font-size: 18px;
-    gap: 16px;
+    gap: 20px; 
 }
 
-.header__nav a {
+.header__nav a{
     color: white;
     text-decoration: none;
     padding: 14px;
-    border-radius: 6px;
+    border-radius: 8px;
 }
 
-.header__nav a:hover {
+.header__nav a:hover{
     text-decoration: underline;
+    background-color:#cbe300 ;
+    color: #0c1014;
 }
 
-a.header__nav--active {
+a.plano-mod{
     background-color: #cbe300;
     color: #0c1014;
-    pointer-events: none;
+    cursor: default;
 }
 
-.pricing {
+.preco{
     display: flex;
     gap: 16px;
 }
 
-.pricing-plan {
+.preco-plano{
     flex: 1;
-    background-color: #1f262c;
+    background-color: #1f2c2c;
     padding: 30px;
     border-radius: 6px;
     box-shadow: 0 5px 15px -6px black;
@@ -68,47 +70,48 @@ a.header__nav--active {
     flex-direction: column;
 }
 
-.class-plan__title {
+.plano-titulo{
     text-transform: uppercase;
     border-bottom: 2px solid #cbe300;
     margin-top: 0;
     padding-bottom: 10px;
-    letter-spacing: 2px;
+    letter-spacing: 10px;
 }
 
-.pricing-plan p {
+.plano-valor p{
     margin-top: 0;
+
 }
 
-.pricing-plan__price {
+.plano-valor{
     font-size: 34px;
 }
 
-.pricing-plan__features {
-    margin: 0 0 35px;
+.preco-caracteristicas{
+    margin: 0 0 35px 0;
     color: #b5b5b5;
     padding-left: 16px;
     line-height: 1.8;
-    flex: 1;
+    flex-grow: 1;
 }
 
-.pricing-plan__features li::marker {
+.preco-caracteristicas li::marker {
     color: #cbe300;
 }
 
-.pricing-plan__cta {
+.preco-cta{
     text-decoration: none;
     color: #0c1014;
     background-color: #cbe300;
     border-radius: 6px;
     text-transform: uppercase;
     font-size: 16px;
-    font-weight: bold;
+    font-weight:bold;
     padding: 16px 10px;
     text-align: center;
 }
 
-.pricing-plan__cta:hover {
+.preco-cta:hover{
     outline: 2px solid #cbe300;
     background-color: transparent;
     color: white;
